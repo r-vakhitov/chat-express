@@ -19,7 +19,7 @@ export default function Chat({ users, messages, userName, roomId, onAddMessage }
   }
 
   useEffect(() => {
-    messagesRef.current.scrollTo(0, 99999);
+    messagesRef.current.scrollTo(0, messagesRef.current.scrollHeight);
   }, [messages]);
 
   console.log(messages);
